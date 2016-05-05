@@ -1,0 +1,2 @@
+#theme for hexo
+## building
