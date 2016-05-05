@@ -1,0 +1,12 @@
+<div class="container">
+	<%- partial('_partial/index-list1') %>
+	<div class="index-articles">
+		<div class="article-info">
+			<h1 class="article-title"><%- page.title%></h1>
+			<span class="article-time"><%- page.date.format(config.date_format) %></span>
+		</div>		
+		<article class="markdown-body">
+		<%- page.content %>
+		</article>
+	</div>	
+</div>

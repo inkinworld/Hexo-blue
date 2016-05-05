@@ -1,0 +1,10 @@
+
+<div class="container">
+	<%- partial('_partial/index-list1') %>
+	<div class="index-articles">
+		<% posts.forEach(function(article,index){ %>
+			<%- partial('_partial/article-excerpt',{article:article}) %>
+		<% }) %>
+	</div>	
+	<div class="toc"></div>
+</div>
