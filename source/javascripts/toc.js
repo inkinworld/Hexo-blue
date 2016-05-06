@@ -1,3 +1,4 @@
+console.log("aaaaaaaaaaaaaaaaaaaa");
 function create_toc(){
 	var toc = [];
 	var article = document.querySelector('article');

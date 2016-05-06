@@ -43,6 +43,30 @@ button {
     max-width: 1024px;
     margin: auto;
 }
+.archive-title{
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.tag-list-item{
+    list-style-type: none;
+    position: relative;
+}
+.tag-list-count{
+    background-color: rgb(102, 151, 193);
+    color: white;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    line-height: 30px;
+}
 
 .index-header {
     color: white;
@@ -183,9 +207,28 @@ button {
     margin-top: 14px;
 }
 
+.post-articles{
+    margin-top: 0px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color: rgb(255, 255, 255); */
+    padding: 14px 14px;
+}
+
 .index-article {
     /* height: 70px; */
     width: 100%;
+    border-left: solid 10px rgb(31, 99, 207);
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.archive-article {
+    /* height: 70px; */
+    float: left;
+    width: 50%;
     border-left: solid 10px rgb(31, 99, 207);
     margin-bottom: 10px;
     background-color: white;
@@ -253,30 +296,41 @@ button {
 }
 
 .page{
-	width: 110%;
+    overflow: hidden;
+	width: 100%;
 	height: 40px;
 	margin-top: 15px;
-	margin-right: -10%;
 }
 
 .page a{
     text-align: center;
-    font-size: 16px;
-    color: rgb(53, 127, 222);
+    font-size: 18px;
+    color: black;
 }
 
 .page-boe{
 	display: inline-block;
-	width: 91%;
+	width: 100%;
 	background-color: white;
 	padding: 5px;
 }
-.page-m{
-	width: 44%;
+.page-prev{
+	width: 50%;
 	padding: 5px;
 	background-color: white;
-	margin-right: 2%;
-	display: inline-block;
+	float: left;
+    display: block;
+    color: black;
+    border-right:solid 2px rgb(102, 151, 193);
+}
+.page-next{
+    width: 50%;
+    padding: 5px;
+    background-color: white;
+    float: right;
+    display: block;
+    color: black;
+    border-left:solid 2px rgb(102, 151, 193);
 }
 
 #toc{
@@ -324,7 +378,7 @@ button {
     font-size: 1.1em;
 }
 
-footer{
+.footer{
 	width: 100%;
 	height: 60px;
 	background-color: rgb(53, 127, 222);
@@ -465,7 +519,6 @@ footer{
         /* background-image: -webkit-linear-gradient(45deg,rgb(119, 157, 219),rgb(136, 195, 215)); */
     }
 
-body {}
     .container {
         width: 960px;
         /* height: 600px; */

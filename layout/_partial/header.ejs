@@ -1,14 +1,13 @@
 <header class="index-header">
 	<div class="header-box">
 		<button class="list-button">三</button>
-		<h1 class="blog-name">Blog</h1>
+		<h1 class="blog-name"><%- config.title %></h1>
 		<button class="nav-button"><</button>
 		<div class="index-nav">
 			<ul>
-				<li>主页</li>
-				<li>时间轴</li>
-				<li>关于</li>
-				<li>作品</li>
+			  <% for (var i in theme.menu){ %>
+			    <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+			  <% } %>
 			</ul>	
 		</div>
 	</div>

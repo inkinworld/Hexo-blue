@@ -1,0 +1,3 @@
+<% article.tags.forEach(function(tag){%>
+	<a class="article-tag" href="<%- config.root %> + <%- tag.path %>"><%- tag.name %></a>
+<%})%>

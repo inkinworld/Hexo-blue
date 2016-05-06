@@ -1,0 +1,15 @@
+<%
+    var title = '';
+    if (page.category) title = page.category;
+    if (page.tag) title = page.tag;
+    if (page.archive){
+        if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+        else title = "Archives";
+    }
+
+    if(is_home()) title = "Home";
+%>
+
+<% if(title) { %>
+   <h1 class="archive-title"><%- title %></h1>
+<% } %>
