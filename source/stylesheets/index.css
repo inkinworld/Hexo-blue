@@ -39,6 +39,15 @@ button {
     outline: none;
 }
 
+#comments{
+    padding: 14px;
+}
+#ds-thread{
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 3px 5px rgb(78, 72, 72);
+}
+
 .header-box {
     max-width: 1024px;
     margin: auto;
@@ -55,17 +64,18 @@ button {
 }
 .tag-list-count{
     background-color: rgb(102, 151, 193);
-    color: white;
+    color: rgb(255, 255, 255);
     display: inline-block;
-    height: 30px;
+    height: 24px;
     width: 30px;
     border-radius: 8px;
     text-align: center;
     font-size: 18px;
+    line-height: 26px;
     position: absolute;
     right: 20px;
-    top: 10px;
-    line-height: 30px;
+    top: 13px;
+    box-shadow: 0 3px 5px rgb(78, 72, 72);
 }
 
 .index-header {
@@ -86,6 +96,7 @@ button {
     -webkit-transition: .3s;
     transition: .3s;
     z-index: 10;
+    box-shadow: 0 0px 5px rgb(78, 72, 72);
 }
 
 .list-button {
@@ -142,6 +153,7 @@ button {
 
 .index-list1 {
     display: none;
+    box-shadow: 0 3px 5px rgb(78, 72, 72);
 }
 
 .index-nav {
@@ -179,6 +191,7 @@ button {
     font-size: 24px;
     line-height: 50px;
     padding: 0 20px;
+    transition: .3s;
 }
 
 #index-tip {
@@ -212,32 +225,44 @@ button {
     width: 100%;
     display: inline-block;
     vertical-align: top;
-    /* background-color: rgb(255, 255, 255); */
     padding: 14px 14px;
+}
+
+.markdown-body{
+    box-shadow: 0 3px 5px rgb(78, 72, 72);
 }
 
 .index-article {
     /* height: 70px; */
     width: 100%;
     border-left: solid 10px rgb(31, 99, 207);
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     background-color: white;
     padding: 5px 10px;
+    box-shadow: 0 3px 5px rgb(78, 72, 72);
+    transition: 0.3s;
 }
+
 
 .archive-article {
     /* height: 70px; */
     float: left;
-    width: 50%;
+    width: 48%;
     border-left: solid 10px rgb(31, 99, 207);
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    margin-right: 2%;
     background-color: white;
     padding: 5px 10px;
+    box-shadow: 0 3px 5px rgb(78, 72, 72);
+    transition: 0.3s;
 }
 
+.archive-article:hover{
+    border-left: solid 20px rgb(31, 99, 207);
+}
 .index-title {
     color: rgb(53, 127, 222);
-    font-size: 18px;
+    /*font-size: 18px;*/
 }
 
 .index-date {
@@ -254,7 +279,10 @@ button {
 }
 
 .index-article:hover {
-    border-left: solid 10px #0C2A81;
+    border-left: solid 20px rgb(31, 99, 207);
+/*    -webkit-transform: translate(20px, 0);
+    transform: translate(20px, 0);*/
+    /*background-color: rgb(53, 127, 222);*/
 }
 
 .article-info{
@@ -306,8 +334,8 @@ button {
     text-align: center;
     font-size: 18px;
     color: black;
+    box-shadow: 0 3px 5px rgb(78, 72, 72);
 }
-
 .page-boe{
 	display: inline-block;
 	width: 100%;
@@ -368,7 +396,7 @@ button {
     list-style-type: none;
 }
 #toc>li{
-    font-size: 1.5em;
+    font-size: archive-article.5em;
     font-weight: 300;
     color:rgb(31, 99, 207);
 }
@@ -388,6 +416,7 @@ button {
 	font-size: 14px;
 	position: absolute;
 	bottom: 0px;
+    box-shadow: 0 0px 5px rgb(78, 72, 72);
 }
 
 /*--------------animation-------------*/
@@ -484,9 +513,12 @@ button {
         background-color: rgb(53, 127, 222);
         margin-right: 10px;
         cursor: pointer;
+        box-shadow: 0 3px 5px rgb(78, 72, 72);
+
     }
     .index-nav ul li:hover {
-        box-shadow: 0 3px 5px rgb(78, 72, 72);
+        -webkit-transform: translate(0,10px);
+        transform: translate(0, 10px);
     }
     .list-button {
         width: 40px;
@@ -563,7 +595,7 @@ button {
         padding: 14px 14px;
     }
     .index-title {
-        font-size: 24px;
+        /*font-size: 24px;*/
     }
     #toc{
 
