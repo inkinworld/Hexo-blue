@@ -1,12 +1,25 @@
-<div class="index-list">
+<% if(type === "0"){ %>
+	<div class="index-list">
+<% }else{ %>
+	<div class="index-list1">
+<% } %>
 	<ul class="head-icon">
 		<li id="index-tip">
 			<img src="/images/head.jpg"><br>
 			<span><%- theme.name %></span>
+			<p><%- config.slogan %></p>
 		</li>
-		<li style="height:auto;padding:0px">
-			<%- list_tags({}) %>
-		</li>
+		<% if(is_archive()){ %>
+			<li style="height:auto;padding:0px">
+				<%- list_archives() %>
+			</li>
+		<% }else{ %>
+			<li style="height:auto;padding:0px">
+				<%- list_categories({depth:1}) %>
+			</li>
+			<li style="height:auto;padding:0px">
+				<%- list_tags({}) %>
+			</li>
+		<% } %>
 	</ul>	
-
 </div>

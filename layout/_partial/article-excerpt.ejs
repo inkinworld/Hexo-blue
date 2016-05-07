@@ -1,13 +1,9 @@
 <% if(isIndex){ %>
 	<div class="index-article">
-		<h2 class="index-title"><a href="<%- config.root %><%- article.path %>"><%= article.title %></a></h2>
-		<span class="index-date"><%= article.date.format(config.date_format) %></span>
-		<p class="index-view"><%= article.excerpt %></p>
-	</div>
 <% }else{ %>
 	<div class="archive-article">
-		<h2 class="index-title"><a href="<%- config.root %><%- article.path %>"><%= article.title %></a></h2>
-		<span class="index-date"><%= article.date.format(config.date_format) %></span>
-		<p class="index-view"><%= article.excerpt %></p>
-	</div>
 <% } %>
+	<h2 class="index-title"><a href="<%- config.root %><%- article.path %>"><%= article.title %></a></h2>
+	<span class="index-date"><%= article.date.format(config.date_format) %></span>
+	<div class="index-view markdown-body"><%- article.excerpt %></div>
+</div>

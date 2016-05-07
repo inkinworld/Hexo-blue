@@ -1,8 +1,10 @@
 .markdown {
+    padding: 20px;
     overflow: hidden;
     margin-bottom: 2em;
     font-size: 100%;
-    color: #333
+    color: #333;
+    background-color: white;
 }
 
 .markdown em,

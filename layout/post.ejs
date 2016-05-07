@@ -7,10 +7,10 @@
 			<% } %>
 			<span class="article-time"><%- page.date.format(config.date_format) %></span>
 		</div>		
-		<article class="markdown-body">
-		<%- page.content %>
+		<article class="markdown-body markdown shadow-set">
+			<%- markdown(page.content) %>
 		</article>
 	</div>	
-	<div class="toc"></div>
+	<%- partial('_partial/toc') %>
 	<%- partial('_partial/comments',{post: page})%>
 </div>

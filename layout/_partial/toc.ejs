@@ -1,3 +1,6 @@
+<div class="toc-button"></div>
+
+<script type="text/javascript">
 function create_toc(){
 	var toc = [];
 	var article = document.querySelector('article');
@@ -41,3 +44,24 @@ function create_toc(){
 
 	}
 }
+
+create_toc();
+//委托toc事件
+var body = document.querySelector('body');
+var toc = document.querySelector('#toc');
+toc.addEventListener('click',function(evt){
+	var target = evt.target;
+	if(target.tagName == 'LI'){
+		body.scrollTop = 1000;
+		var move = document.querySelector(target.tar).offsetTop;
+		body.scrollTop = move - 120;
+	}
+})
+//为toc绑定按钮
+var toc_button = document.querySelector('.toc-button')
+toc_button.addEventListener('click',function(evt){
+	evt.target.classList.toggle('open');
+	toc.classList.toggle('open');
+})
+
+</script>
