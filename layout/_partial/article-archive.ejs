@@ -2,7 +2,7 @@
 
     <!-- Title -->
     <h2 class="blog-post-title-archive">
-        <a href="<%- config.root %><%- item.path %>">
+        <a href="<%- url_for(item.path) %>">
             <%- item.title || item.link%>
         </a>
     </h2>

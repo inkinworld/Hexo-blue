@@ -1,13 +1,13 @@
 <div class="page">
 	<% if (page.next && page.prev){ %>
-	    <a class="page-prev" href="<%- config.root %><%- page.prev_link %>">Previous</a>
-	    <a class="page-next" href="<%- config.root %><%- page.next_link %>">Next</a>
+	    <a class="page-prev" href="<%- url_for(page.prev_link) %>">Previous</a>
+	    <a class="page-next" href="<%- url_for(page.next_link) %>">Next</a>
 	<% } %>
 	<% if (page.next && !page.prev){ %>
-	    <a class="page-boe" href="<%- config.root %><%- page.next_link %>">Next</a>
+	    <a class="page-boe" href="<%- url_for(page.next_link) %>">Next</a>
 	<% } %>
 	<% if (!page.next && page.prev){ %>
-	    <a class="page-boe" href="<%- config.root %><%- page.prev_link %>">Previous</a>
+	    <a class="page-boe" href="<%- url_for(page.prev_link) %>">Previous</a>
 	<% } %>
 
 </div>

@@ -8,7 +8,7 @@
 			<span class="article-time"><%- page.date.format(config.date_format) %></span>
 		</div>		
 		<article class="markdown-body markdown shadow-set">
-			<%- markdown(page.content) %>
+			<%- page.content %>
 		</article>
 	</div>	
 	<%- partial('_partial/toc') %>

@@ -1,1 +1,10 @@
-<%- partial('_partial/index',{isIndex:true})%>
+<div class="container">
+	<%- partial('_partial/index-list',{type:"1"}) %>
+	<div class="index-articles">
+		<%- partial('_partial/archive-title') %>
+		<% page.posts.forEach(function(article,index){ %>
+			<%- partial('_partial/article-excerpt',{article:article,isIndex:true}) %>
+		<% }) %>
+		<%- partial('_partial/pagination') %>
+	</div>	
+</div>
