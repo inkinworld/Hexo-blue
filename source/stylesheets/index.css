@@ -465,6 +465,7 @@ button {
 
 .index-header.open {
     -webkit-transform: translate(240px, 0);
+    transform: translate(240px, 0);
     background-color:
 }
 
