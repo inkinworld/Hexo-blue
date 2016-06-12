@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
  <% if (page.description){ %>
  <meta name="description" content="<%= page.description %>">
@@ -12,16 +12,16 @@
  <% } else if (config.description){ %>
  <meta name="description" content="<%= config.description %>">
  <% } %>
- 
+
  <% if (page.keywords){ %>
  <meta name="keywords" content="<%= page.keywords %>">
  <% } else if (page.tags){ %>
  <%
 var keywords_content=[];
-page.tags.each(function(k){ 
+page.tags.each(function(k){
 	keywords_content.push(k.name);
 }) %>
- <meta name="keywords" content="<%= keywords_content %>">  
+ <meta name="keywords" content="<%= keywords_content %>">
  <% } %>
   <%
   var title = page.title;
