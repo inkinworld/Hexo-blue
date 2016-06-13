@@ -598,7 +598,7 @@ article{
     .archive-article {
         /* height: 70px; */
         float: left;
-        width: 48%;
+        /*width: 48%;*/
         border-left: solid 10px rgb(31, 99, 207);
         margin-bottom: 14px;
         margin-right: 2%;
