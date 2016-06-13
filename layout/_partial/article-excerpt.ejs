@@ -5,5 +5,7 @@
 <% } %>
 	<h2 class="index-title"><a href="<%- url_for(article.path) %>"><%= article.title %></a></h2>
 	<span class="index-date"><%= article.date.format(config.date_format) %></span>
+<% if(isIndex){ %>
 	<div class="index-view markdown-body"><%- article.excerpt %></div>
+<% } %>
 </div>
